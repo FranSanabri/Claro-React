@@ -9,12 +9,8 @@
   font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto */
 }
 
-.banner img {
-  width: 100%;
-  height: auto;
-}
-
 .banner-tienda {
+  width: 100%;
   position: relative;
   margin-bottom: 20px;
 }

@@ -92,8 +92,8 @@ const Store = () => {
 
   return (
     <div className="store-container">
-      <div className="banner-tienda">
-        <img src="https://i.ibb.co/J7S5VzY/Captura.png" alt="Banner" />
+      <div>
+        <img src="https://i.ibb.co/J7S5VzY/Captura.png"  className="banner-tienda" alt="Banner" />
       </div>
       <div className="filters">
         <label className="filter-label">Filtrar por Marca:</label>
