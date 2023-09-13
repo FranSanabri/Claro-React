@@ -1,0 +1,64 @@
+/* Estilos para el contenedor de servicios */
+.servicios-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .servicios-banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Estilos para el título de servicios */
+  .servicios-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilos para cada servicio individual */
+  .servicio {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para el título de servicio */
+  .servicio-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Estilos para la descripción de servicio */
+  .servicio-description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* Estilos para el botón de ver más */
+  .servicio-button {
+    background-color: #0074cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .servicio-button:hover {
+    background-color: #005ba9;
+  }
+  

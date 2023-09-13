@@ -1,3 +1,7 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -6,6 +10,13 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.app-container {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Fondo blanco */
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

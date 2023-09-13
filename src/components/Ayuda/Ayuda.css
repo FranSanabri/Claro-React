@@ -1,0 +1,74 @@
+/* Estilos para el banner de asistencia */
+.asistencia-banner {
+    background-color: #f5f5f5; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+    position: relative; /* Posición relativa para alinear la línea vertical */
+  }
+  
+  .asistencia-title {
+    color: #ff0000; /* Texto rojo */
+    font-size: 24px; /* Tamaño de fuente */
+    top: 20px;
+}
+  
+  .asistencia-subtitle {
+    font-size: 16px; /* Tamaño de fuente */
+    color: #333; /* Texto gris oscuro */
+  }
+  
+  .asistencia-divider {
+    position: absolute; /* Posición absoluta para la línea vertical */
+    width: 5px; /* Ancho de la línea vertical */
+    background-color: #ff0000; /* Color rojo */
+    top: 50px; /* Alinear en la parte superior */
+    bottom: 0; /* Alinear en la parte inferior */
+    left: 567px; /* Alinear en la izquierda */
+    height: 80px;
+    border-radius: 5px;
+    margin: auto; /* Centrar verticalmente */
+  }
+  
+  /* Resto de tus estilos aquí */
+  
+  /* Resto de tus estilos aquí */
+  
+  
+  /* Estilos para la sección de ayuda */
+  /* Estilos para la sección de ayuda */
+.help-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten automáticamente a la fila siguiente */
+    justify-content: space-between;
+    margin-top: 20px; /* Espacio superior para separar del banner */
+  }
+  
+  .help-item {
+    flex-basis: calc(33.33% - 10px); /* Establece el ancho de cada elemento en 33.33% (3 elementos por fila) */
+    text-align: center;
+    margin-bottom: 20px; /* Espacio inferior para separar de la siguiente fila */
+    position: relative; /* Para posicionar la línea vertical relativa a este elemento */
+  }
+  
+  .item-heading {
+    color: #0074cc;
+    font-size: 18px;
+  }
+  
+  .item-arrow {
+    color: #0074cc;
+    font-size: 18px;
+    margin-top: 5px; /* Espacio superior */
+  }
+  
+  .item-divider {
+    background-color: #0074cc;
+    width: 2px;
+    height: 100%; /* Ajusta la altura para que llegue hasta el fondo */
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -5px; /* Posición a la derecha del elemento */
+  }
+  

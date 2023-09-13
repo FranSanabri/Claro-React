@@ -1,0 +1,96 @@
+/* Estilos para el componente PackYa */
+
+.packya-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .packya-logo {
+    width: 80px; /* Ajusta el tamaño de tu logo */
+    display: block; /* Muestra el logo como un bloque para centrarlo horizontalmente */
+    margin-left: auto; /* Centra horizontalmente el logo */
+    margin-right: auto; /* Centra horizontalmente el logo */
+    position: relative; /* Cambia la posición del logo */
+    top: 35px; /* Ajusta el valor para mover el logo más abajo */
+  }
+  
+  
+  /* Estilos para el resto del contenido */
+  .packya-container {
+    text-align: center;
+  }
+  
+  .input-container {
+    margin-top: 20px; /* Espacio entre el logo y el contenido debajo */
+  }
+  
+  /* Estilos para otros elementos... */
+  
+  
+  .input-container {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .input-example {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #888;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+ .input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #c0c0c0; /* Color de letra gris claro */
+}
+
+.input-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+  
+  .input-note {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #888;
+  }
+  
+  .continue-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .continue-button:hover {
+    background-color: #cc0000;
+  }
+  

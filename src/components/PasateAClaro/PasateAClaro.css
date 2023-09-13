@@ -1,0 +1,136 @@
+/* Estilos para el banner */
+.banner {
+  margin-top: 30px;
+  background-color: #dddddd; /* Color de fondo gris medio */
+  text-align: center;
+  padding: 20px;
+  color: #000000; /* Texto en negro */
+  max-width: 50%; /* Establece un ancho máximo para el banner */
+  margin-left: auto; /* Centra horizontalmente el banner */
+  margin-right: auto; /* Centra horizontalmente el banner */
+  border-radius: 10px;
+}
+
+.banner-box {
+  margin-top: 30px;
+  background-color: #dddddd; /* Color de fondo gris medio */
+  text-align: center;
+  padding: 20px;
+  color: #000000; /* Texto en negro */
+}
+
+.banner-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.banner-subtitle {
+  color: #ff0000; /* Texto en rojo */
+  font-size: 24px;
+  margin: 0;
+}
+
+.banner-info {
+  font-size: 25px;
+}
+
+/* Resto de tus estilos aquí */
+
+  /* Estilos para los planes de control */
+  /* Estilos para los planes de control */
+.plan-control-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Alinea las filas en la parte superior */
+    margin-top: 20px;
+  }
+  
+  .plan-control-box {
+    background-color: #ffffff; /* Fondo blanco para las cajas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border: 1px solid #dddddd; /* Borde para las cajas */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column; /* Alineación vertical de elementos */
+    align-items: center; /* Centrar elementos horizontalmente */
+  }
+  
+  .plan-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .plan-info {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  .plan-price {
+    font-size: 20px;
+    color: #ff0000; /* Texto en rojo para el precio */
+    margin-top: 10px;
+  }
+  
+  .plan-features {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .plan-description {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .plan-button {
+    background-color: #ff0000; /* Fondo rojo para el botón */
+    color: #ffffff; /* Texto blanco para el botón */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .plan-button:hover {
+    background-color: #cc0000; /* Cambio de color al pasar el mouse */
+  }
+  
+
+  .plan-divider {
+    border: none;
+    height: 1px;
+    background-color: #c9c9c9;
+    margin: 10px 0;
+    width: calc(100% + 40px); /* Añade un ancho para que se extienda dentro de la caja y llegue hasta el borde */
+    margin-left: -20px; /* Ajusta el margen izquierdo para compensar el ancho adicional */
+    margin-right: -20px; /* Ajusta el margen derecho para compensar el ancho adicional */
+  }
+
+  .other-options {
+    display: flex; /* Hace que los elementos estén en línea */
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme en el espacio disponible */
+  }
+  
+  .clickable-box {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse para indicar que es clicable */
+    padding: 8px; /* Espaciado interno para mejorar la apariencia */
+    flex: 1; /* Permite que las cajas tengan el mismo ancho y se ajusten al espacio disponible */
+    margin: 0 5px; /* Espaciado externo entre las cajas */
+  }
+  
+  .clickable-box:hover {
+    background-color: #dddddd; /* Cambio de color al pasar el mouse */
+  }
+  
+  
+  
+  
