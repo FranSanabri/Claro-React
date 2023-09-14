@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from '../Footer/Footer';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 import './PasateAClaro.css'; // Asegúrate de importar tu archivo de estilos
@@ -24,16 +25,16 @@ const PasateAClaro = () => {
        respuesta: 'La portabilidad numerica es la posibilidad de camibar de empresa de telofonia movial sin perder tu nu numero.',
      },
      {
-       pregunta: 'Pregunta 2',
-       respuesta: 'Respuesta a la pregunta 2.',
+       pregunta: '¿Cuales son los requisitos para hacer la portabilidad',
+       respuesta: 'Si ya elegiste pasarte a Claro, el único requisito es ser el titular de la línea. Sólo necesitas el DNI para comenzar el traspaso.Elegí tu Plan y dejanos tu teléfono y te llamamos dentro de las 2 horas o podés llamar al 0800-123-CLARO (25276). Te vamos a enviar el chip Claro por correo de forma gratuita y un código de Portabilidad por SMS para validar el cambio de compañía y activar tu chip Claro. Luego sólo tenés que esperar al momento en que tu celular se quede sin señal para poder hacer el cambio de chip. El cambio de compañía se da entre las 2:00 y las 5:00 de la madrugada para que siempre puedas estar conectado.',
      },
      {
-       pregunta: 'Pregunta 3',
-       respuesta: 'Respuesta a la pregunta 3.',
+       pregunta: '¿Como hacer la Portabilidad a Claro?',
+       respuesta: 'Completa el formulario con tus datos y conoce los beneficios que tenemos para vos: Descuentos en tu plan, llamadas ilimitadas, WhatsApp gratis, y roaming incluido en tu plan..',
      },
      {
-       pregunta: 'Pregunta 4',
-       respuesta: 'Respuesta a la pregunta 4.',
+       pregunta: '¿Cuanto demora el tramieta de portabilidad?',
+       respuesta: 'Una vez realizado el pedido de traspaso, desde Claro te llamamos y enviamos sin cargo tu chip Claro a la direccion que nos indiques, para que puedas empezar a usar la linea una vez este activa.',
      },
    ];
 
@@ -225,7 +226,7 @@ const PasateAClaro = () => {
           ))}
         </div>
       </div>
-
+      <Footer />
     </div>
   );
 };

@@ -35,7 +35,6 @@ const Servicios = () => {
         </p>
         <button className="servicio-button">Ver más</button>
       </div>
-      {/* Agrega más servicios según sea necesario */}
     </div>
   );
 };

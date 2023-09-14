@@ -1,6 +1,6 @@
 /* Estilos para el banner */
 .banner {
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: #dddddd; /* Color de fondo gris medio */
   text-align: center;
   padding: 20px;
@@ -8,7 +8,7 @@
   max-width: 50%; /* Establece un ancho máximo para el banner */
   margin-left: auto; /* Centra horizontalmente el banner */
   margin-right: auto; /* Centra horizontalmente el banner */
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .banner-box {
@@ -44,6 +44,7 @@
     justify-content: center;
     align-items: flex-start; /* Alinea las filas en la parte superior */
     margin-top: 20px;
+    
   }
   
   .plan-control-box {
@@ -58,6 +59,8 @@
     display: flex;
     flex-direction: column; /* Alineación vertical de elementos */
     align-items: center; /* Centrar elementos horizontalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra cuando se pasa el cursor */
+    transition: box-shadow 0.3s ease; 
   }
   
   .plan-title {
