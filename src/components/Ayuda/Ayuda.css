@@ -33,8 +33,6 @@
   
   /* Resto de tus estilos aquí */
   
-  
-  /* Estilos para la sección de ayuda */
   /* Estilos para la sección de ayuda */
 .help-section {
     display: flex;
@@ -69,6 +67,6 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    right: -5px; /* Posición a la derecha del elemento */
+    right: 20px;
   }
   

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Ayuda.css'; // Asegúrate de importar tus estilos
+import Footer from '../Footer/Footer';
 
 const Ayuda = () => {
   return (
@@ -15,7 +16,7 @@ const Ayuda = () => {
       <div className="help-section">
         <div className="help-item">
           <div className="item-heading">FACTURA</div>
-          {/* Línea azul al lado del texto */}
+           {/* Línea azul al lado del texto */}
           <div className="item-divider"></div>
         </div>
 
@@ -51,6 +52,7 @@ const Ayuda = () => {
           <div className="item-divider"></div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
