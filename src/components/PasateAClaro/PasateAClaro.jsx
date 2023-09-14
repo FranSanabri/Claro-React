@@ -1,7 +1,71 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
 import './PasateAClaro.css'; // Asegúrate de importar tu archivo de estilos
 
 const PasateAClaro = () => {
+
+   // Define un estado para controlar qué preguntas están abiertas
+   const [respuestasAbiertas, setRespuestasAbiertas] = useState([]);
+
+   const toggleRespuesta = (index) => {
+    if (respuestasAbiertas.includes(index)) {
+      setRespuestasAbiertas(respuestasAbiertas.filter((item) => item !== index));
+    } else {
+      setRespuestasAbiertas([...respuestasAbiertas, index]);
+    }
+  };
+ 
+   // Define tus preguntas y respuestas aquí
+   const preguntasFrecuentes = [
+     {
+       pregunta: '¿Que es la Portabilidad Numerica?',
+       respuesta: 'La portabilidad numerica es la posibilidad de camibar de empresa de telofonia movial sin perder tu nu numero.',
+     },
+     {
+       pregunta: 'Pregunta 2',
+       respuesta: 'Respuesta a la pregunta 2.',
+     },
+     {
+       pregunta: 'Pregunta 3',
+       respuesta: 'Respuesta a la pregunta 3.',
+     },
+     {
+       pregunta: 'Pregunta 4',
+       respuesta: 'Respuesta a la pregunta 4.',
+     },
+   ];
+
+   const reviews = [
+    {
+      nombre: 'Juan Pérez',
+      ubicacion: 'La Plata, Buenos Aires',
+      comentario: 'Excelente servicio, estoy muy contento con Claro.',
+      valoracion: 5, // Valoración del 1 al 5
+    },
+    {
+      nombre: 'María Rodríguez',
+      ubicacion: 'San Rafael, Mendoza',
+      comentario: 'Pagaba mas en Movistar.',
+      valoracion: 4,
+    },
+    {
+      nombre: 'Martin Pachecho',
+      ubicacion: 'Moron, Buenos Aires',
+      comentario: 'Los reclamos no me los toman.',
+      valoracion: 2,
+    },
+    {
+      nombre: 'Blas M. Andrade',
+      ubicacion: 'Mercedes, Buenos Aires',
+      comentario: 'Buena atención al cliente.',
+      valoracion: 3,
+    },
+    // Agrega más comentarios según sea necesario
+  ];
+  
+  
   return (
     <div>
       <div className="banner">
@@ -127,6 +191,40 @@ const PasateAClaro = () => {
     </div>
   </div>
 </div>
+<div className="preguntas-frecuentes">
+      <p style={{ fontSize: "24px", textAlign: "center" }}>Preguntas frecuentes sobre la portabilidad numérica</p>
+      {/* Mapea las preguntas y respuestas y crea un acordeón */}
+      {preguntasFrecuentes.map((item, index) => (
+        <div key={index} className="pregunta">
+          <div className="pregunta-header" onClick={() => toggleRespuesta(index)}>
+            <p style={{ fontSize: "20px" }}>{item.pregunta}</p>
+            {/* Icono de flecha abajo/arriba según si está abierta o no */}
+            {respuestasAbiertas.includes(index) ? "▲" : "▼"}
+          </div>
+          {/* Mostrar la respuesta si la pregunta está abierta */}
+          <div className={`pregunta-respuesta ${respuestasAbiertas.includes(index) ? 'abierta' : ''}`}>
+            <p>{item.respuesta}</p>
+          </div>
+        </div>
+      ))}
+  </div>
+  <div className="reviews-section">
+        <h2 style={{ fontSize: "28px", textAlign: "center" }}>Reviews</h2>
+        <div className="reviews-grid">
+          {reviews.map((review, index) => (
+            <div key={index} className="review">
+              <div className="rating">
+                {Array.from({ length: review.valoracion }).map((_, i) => (
+                  <FontAwesomeIcon icon={faStar} key={i} style={{ color: "#FFD700" }} />
+                ))}
+              </div>
+              <p className="review-name">{review.nombre}</p>
+              <p className="review-location">{review.ubicacion}</p>
+              <p className="review-comment">{review.comentario}</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
     </div>
   );

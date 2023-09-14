@@ -131,6 +131,186 @@
     background-color: #dddddd; /* Cambio de color al pasar el mouse */
   }
   
-  
-  
-  
+ /* Estilos para el acordeón de preguntas frecuentes */
+.preguntas-frecuentes {
+  width: 70%;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
+.pregunta {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.pregunta-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.pregunta-header p {
+  font-size: 20px;
+  margin: 0; /* Elimina el margen inferior para evitar el espacio adicional */
+}
+
+.pregunta-header:hover {
+  position: relative; /* Agrega posición relativa para crear el efecto */
+}
+
+/* Agrega una línea roja en la parte inferior al pasar el cursor */
+.pregunta-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0000;
+  transform: scaleX(0); /* Inicialmente, la línea está oculta */
+  transform-origin: left;
+  transition: transform 1s ease; /* Transición de crecimiento */
+}
+
+/* Estilo cuando el cursor está sobre la pregunta */
+.pregunta-header:hover::after {
+  transform: scaleX(1); /* Muestra la línea roja al pasar el cursor */
+}
+
+.pregunta-respuesta {
+  display: none;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.pregunta-respuesta p {
+  font-size: 16px;
+}
+
+/* Estilo para mostrar la respuesta cuando la pregunta está abierta */
+.pregunta-respuesta.abierta {
+  display: block;
+}
+
+
+
+/* Estilos para el nombre de la persona */
+.review-name {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif; /* Cambia 'Nunito' por la fuente que desees */
+  margin-top: 10px;
+}
+
+/* Estilos para la ubicación */
+.review-location {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que desees */
+  color: #777;
+}
+
+/* Estilos para el comentario */
+.review-comment {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+/* Estilos para el contenedor de las revisiones en filas */
+.reviews-grid {
+  display: flex;
+  flex-wrap: wrap; /* Envolver en filas */
+  justify-content: center; /* Centrar horizontalmente las filas */
+  gap: 20px; /* Espacio entre las revisiones */
+}
+
+/* Estilos para la sección de revisiones */
+.reviews-section {
+  width: 70%;
+  margin: 0 auto; /* Centrar horizontalmente */
+  margin-top: 40px; /* Espacio superior */
+  margin-bottom: 40px;
+}
+
+/* Estilos para el título de las revisiones */
+.reviews-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+
+/* Estilos para cada revisión individual */
+.review {
+  width: calc(33.33% - 20px); /* Ancho de cada revisión en fila de 3 con espacio entre ellas */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Estilos para las estrellas de valoración */
+.rating {
+  margin-bottom: 10px;
+}
+
+/* Estilos para el nombre de la persona */
+.review-name {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif; /* Cambia 'Nunito' por la fuente que desees */
+  margin-top: 10px;
+}
+
+/* Estilos para la ubicación */
+.review-location {
+  font-size: 14px;
+  font-family: 'Arial', sans-serif; /* Cambia 'Arial' por la fuente que desees */
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Estilos para el comentario */
+.review-comment {
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+
+/* Estilos para la sección de revisiones en dispositivos móviles */
+@media (max-width: 768px) {
+  .reviews-section {
+    width: 90%; /* Ancho ligeramente más ancho para dispositivos móviles */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior reducido */
+    margin-bottom: 20px; /* Espacio inferior reducido */
+  }
+
+  /* Ancho completo para revisiones en dispositivos móviles */
+  .review {
+    width: 100%;
+  }
+
+  /* Estilos para el título de las revisiones en dispositivos móviles */
+  .reviews-section h2 {
+    font-size: 24px; /* Tamaño de fuente reducido */
+    text-align: center;
+  }
+
+  /* Estilos para el nombre de la persona en dispositivos móviles */
+  .review-name {
+    font-size: 16px; /* Tamaño de fuente reducido */
+    margin-top: 10px;
+  }
+
+  /* Estilos para la ubicación en dispositivos móviles */
+  .review-location {
+    font-size: 12px; /* Tamaño de fuente reducido */
+    margin-top: 5px;
+  }
+
+  /* Estilos para el comentario en dispositivos móviles */
+  .review-comment {
+    font-size: 14px; /* Tamaño de fuente reducido */
+    margin-top: 15px;
+  }
+}

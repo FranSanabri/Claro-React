@@ -139,4 +139,13 @@
   .product-info {
     font-size: 12px;
   }
+
+  /* Estilos para el banner de la tienda en dispositivos móviles */
+  .banner-tienda {
+    width: 200%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+
 }
